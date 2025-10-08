@@ -1,0 +1,4 @@
+F:/School/VSProject/multiplayer-server/build/CMakeFiles/server.dir
+F:/School/VSProject/multiplayer-server/build/CMakeFiles/client.dir
+F:/School/VSProject/multiplayer-server/build/CMakeFiles/edit_cache.dir
+F:/School/VSProject/multiplayer-server/build/CMakeFiles/rebuild_cache.dir
