@@ -1,63 +1,30 @@
-#pragma once 
-// Prevents this header file from being included multiple times in a single build.
-// Without this, if two or more files include "client.hpp", the compiler would see
-// multiple definitions of the Client class and throw an error.
+//Second file to make
+#pragma once // Prevents this header file from being included multiple times during compilation
 
-#include <winsock2.h>   
-// Core Windows sockets library.  Defines SOCKET, connect(), send(), recv(), etc.
+#include <winsock2.h>    // Core Windows Sockets API (defines SOCKET, connect(), send(), recv(), etc.)
+#include <ws2tcpip.h>    // Adds modern IPv4/IPv6 helper functions (e.g., inet_pton for address conversion)
+#include <string>        // Enables use of std::string for handling text and IP addresses
+#include <iostream>      // Provides standard input/output stream functions (std::cout, std::cin)
 
-#include <ws2tcpip.h>   
-// Adds modern helper functions for IPv4 and IPv6, such as inet_pton().
-
-#include <string>       
-// Enables use of std::string for storing text messages and IP addresses.
-
-#include <iostream>     
-// Provides standard input/output functions like std::cout and std::cin.
-
-#pragma comment(lib, "ws2_32.lib")  
-// Instructs the compiler to link against the Winsock library (ws2_32.lib).
-// This library contains all the networking functions used by Winsock.
+#pragma comment(lib, "ws2_32.lib") // Links the Winsock2 library that provides actual networking implementations
 
 // ============================================================
-//                     CLASS DECLARATION
+//                      CLASS DECLARATION
 // ============================================================
 
 class Client {
 public:
-    // Constructor:
-    // Takes the server’s IP address and port number as arguments.
-    // Example usage:
-    //      Client client("127.0.0.1", 54000);
-    Client(const std::string& serverIP, int port);
+    Client(const std::string& serverIP, int port); // Constructor — stores the server IP and port number
+    ~Client();                                    // Destructor — closes the socket and cleans up Winsock on exit
 
-    // Destructor:
-    // Automatically called when the Client object goes out of scope.
-    // Will close the socket connection and clean up Winsock resources.
-    ~Client();
-
-    // connectToServer():
-    // Initializes Winsock, creates a socket, and attempts to connect
-    // to the specified server using the stored IP and port.
-    // Returns true on success, false on failure.
-    bool connectToServer();
-
-    // sendMessage():
-    // Sends a text message string over the connected socket to the server.
-    void sendMessage(const std::string& message);
+    bool connectToServer();                       // Initializes Winsock, creates a socket, and connects to the server
+    void sendMessage(const std::string& message); // Sends a text message to the connected server
+    void listenForMessages();                     // Listens continuously for incoming messages from the server
 
 private:
-    // The IP address of the server (for example, "127.0.0.1" for localhost)
-    std::string serverIP;
+    std::string serverIP;                         // The server's IP address (e.g., "127.0.0.1" for localhost)
+    int port;                                     // The port number to connect to (e.g., 54000)
+    SOCKET clientSocket;                          // Socket object representing the client's connection
 
-    // The server’s port number (for example, 54000)
-    int port;
-
-    // The socket object used for the client’s network connection
-    SOCKET clientSocket;
-
-    // initWinsock():
-    // Helper function that initializes the Winsock library.
-    // Must be called before any socket operations can occur.
-    bool initWinsock();
+    bool initWinsock();                           // Initializes the Winsock library before using sockets
 };

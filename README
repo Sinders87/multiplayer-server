@@ -1,0 +1,82 @@
+# Multiplayer Text-Based Network Game (C++ / Winsock2)
+
+This project is a simple multiplayer text-based game built in C++ using Winsock2 and TCP networking. 
+Multiple clients can connect to a central server, explore rooms, fight monsters, pick up items, 
+and participate in a cooperative boss encounter. The server maintains all game state and uses 
+a thread-per-client design to handle multiple simultaneous players.
+
+The game world consists of multiple connected rooms, each containing descriptions, monsters, 
+and items. Players interact with the world using text commands such as LOOK, MOVE, ATTACK, 
+INVENTORY, and HELP. 
+
+A special boss command ("BOSS") teleports all connected players into a shared arena where they 
+must work together to defeat a stronger enemy. The server broadcasts combat updates to all 
+players in the boss room, tracks health, manages death states, and returns players to their 
+original locations once the fight ends.
+
+This project demonstrates fundamental socket programming, server-client communication, 
+multi-threading, shared state management, and basic text-based game mechanics.
+
+## How to Build
+
+This project uses CMake. To compile:
+
+1. Open a terminal inside the project folder.
+2. Create and enter a build directory:
+
+mkdir build
+cd build
+
+3. Configure the project with CMake:
+
+cmake ..
+
+4. Build the server and client executables:
+
+cmake --build .
+
+
+This will produce:
+
+server.exe
+client.exe
+
+inside the build directory.
+
+## How to Run
+
+### Start the Server
+In the build directory:
+
+./server.exe
+
+
+Leave this running.
+
+### Start a Client
+Open a second terminal (and more terminals for additional players):
+
+./client.exe
+
+Enter a username when prompted.
+
+
+## Available Player Commands
+
+LOOK
+MOVE NORTH
+MOVE SOUTH
+MOVE EAST
+MOVE WEST
+ATTACK
+PICKUP <item>
+INVENTORY
+HELP
+SAY <message>
+BOSS
+
+
+- Movement changes the player’s position in the world.
+- LOOK shows the room description, monsters, players, and items.
+- ATTACK engages in combat with monsters or the boss.
+- BOSS triggers a multiplayer boss fight event.

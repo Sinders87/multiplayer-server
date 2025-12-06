@@ -7,7 +7,119 @@ events:
       - "F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Windows - 10.0.26100 - AMD64
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Program used to build from build.ninja files."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ninja-build"
+      - "ninja"
+      - "samu"
+    candidate_directories:
+      - "F:/School/MSYS2/mingw64/bin/"
+      - "F:/School/MSYS2/usr/local/bin/"
+      - "F:/School/MSYS2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "F:/School/MSYS2/usr/bin/site_perl/"
+      - "F:/School/MSYS2/usr/bin/vendor_perl/"
+      - "F:/School/MSYS2/usr/bin/core_perl/"
+      - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
+    searched_directories:
+      - "F:/School/MSYS2/mingw64/bin/ninja-build.com"
+      - "F:/School/MSYS2/mingw64/bin/ninja-build.exe"
+      - "F:/School/MSYS2/mingw64/bin/ninja-build"
+      - "F:/School/MSYS2/mingw64/bin/ninja.com"
+    found: "F:/School/MSYS2/mingw64/bin/ninja.exe"
+    search_context:
+      ENV{PATH}:
+        - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "F:\\School\\MSYS2\\usr\\local\\bin"
+        - "F:\\School\\MSYS2\\usr\\bin"
+        - "F:\\School\\MSYS2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "F:\\School\\MSYS2\\usr\\bin\\site_perl"
+        - "F:\\School\\MSYS2\\usr\\bin\\vendor_perl"
+        - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
+        - "F:\\CMake\\bin"
+        - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"
+      - "F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cc"
+      - "gcc"
+      - "cl"
+      - "bcc"
+      - "xlc"
+      - "icx"
+      - "clang"
+    candidate_directories:
+      - "F:/School/MSYS2/mingw64/bin/"
+      - "F:/School/MSYS2/usr/local/bin/"
+      - "F:/School/MSYS2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "F:/School/MSYS2/usr/bin/site_perl/"
+      - "F:/School/MSYS2/usr/bin/vendor_perl/"
+      - "F:/School/MSYS2/usr/bin/core_perl/"
+      - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
+    searched_directories:
+      - "F:/School/MSYS2/mingw64/bin/cc.com"
+    found: "F:/School/MSYS2/mingw64/bin/cc.exe"
+    search_context:
+      ENV{PATH}:
+        - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "F:\\School\\MSYS2\\usr\\local\\bin"
+        - "F:\\School\\MSYS2\\usr\\bin"
+        - "F:\\School\\MSYS2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "F:\\School\\MSYS2\\usr\\bin\\site_perl"
+        - "F:\\School\\MSYS2\\usr\\bin\\vendor_perl"
+        - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
+        - "F:\\CMake\\bin"
+        - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -48,6 +160,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -57,7 +170,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: F:/School/MSYS2/mingw64/bin/gcc.exe 
+      Compiler: F:/School/MSYS2/mingw64/bin/cc.exe 
       Build flags: 
       Id flags:  
       
@@ -101,6 +214,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/ar.com"
     found: "F:/School/MSYS2/mingw64/bin/ar.exe"
@@ -119,6 +233,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -150,6 +265,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/ranlib.com"
     found: "F:/School/MSYS2/mingw64/bin/ranlib.exe"
@@ -168,6 +284,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -199,6 +316,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/strip.com"
     found: "F:/School/MSYS2/mingw64/bin/strip.exe"
@@ -217,6 +335,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -248,6 +367,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/ld.com"
     found: "F:/School/MSYS2/mingw64/bin/ld.exe"
@@ -266,6 +386,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -297,6 +418,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/nm.com"
     found: "F:/School/MSYS2/mingw64/bin/nm.exe"
@@ -315,6 +437,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -346,6 +469,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/objdump.com"
     found: "F:/School/MSYS2/mingw64/bin/objdump.exe"
@@ -364,6 +488,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -395,6 +520,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/objcopy.com"
     found: "F:/School/MSYS2/mingw64/bin/objcopy.exe"
@@ -413,6 +539,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -444,6 +571,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/readelf.com"
     found: "F:/School/MSYS2/mingw64/bin/readelf.exe"
@@ -462,6 +590,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -493,6 +622,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/dlltool.com"
     found: "F:/School/MSYS2/mingw64/bin/dlltool.exe"
@@ -511,6 +641,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -542,6 +673,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/addr2line.com"
     found: "F:/School/MSYS2/mingw64/bin/addr2line.exe"
@@ -560,6 +692,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -591,6 +724,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/tapi.com"
       - "F:/School/MSYS2/mingw64/bin/tapi.exe"
@@ -625,6 +759,9 @@ events:
       - "F:/CMake/bin/tapi.com"
       - "F:/CMake/bin/tapi.exe"
       - "F:/CMake/bin/tapi"
+      - "C:/Program Files/Git/bin/tapi.com"
+      - "C:/Program Files/Git/bin/tapi.exe"
+      - "C:/Program Files/Git/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
@@ -641,6 +778,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -675,6 +813,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/gcc-ar-15.2.com"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar-15.2.exe"
@@ -709,6 +848,9 @@ events:
       - "F:/CMake/bin/gcc-ar-15.2.com"
       - "F:/CMake/bin/gcc-ar-15.2.exe"
       - "F:/CMake/bin/gcc-ar-15.2"
+      - "C:/Program Files/Git/bin/gcc-ar-15.2.com"
+      - "C:/Program Files/Git/bin/gcc-ar-15.2.exe"
+      - "C:/Program Files/Git/bin/gcc-ar-15.2"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar-15.com"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar-15.exe"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar-15"
@@ -742,6 +884,9 @@ events:
       - "F:/CMake/bin/gcc-ar-15.com"
       - "F:/CMake/bin/gcc-ar-15.exe"
       - "F:/CMake/bin/gcc-ar-15"
+      - "C:/Program Files/Git/bin/gcc-ar-15.com"
+      - "C:/Program Files/Git/bin/gcc-ar-15.exe"
+      - "C:/Program Files/Git/bin/gcc-ar-15"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar15.com"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar15.exe"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar15"
@@ -775,6 +920,9 @@ events:
       - "F:/CMake/bin/gcc-ar15.com"
       - "F:/CMake/bin/gcc-ar15.exe"
       - "F:/CMake/bin/gcc-ar15"
+      - "C:/Program Files/Git/bin/gcc-ar15.com"
+      - "C:/Program Files/Git/bin/gcc-ar15.exe"
+      - "C:/Program Files/Git/bin/gcc-ar15"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar.com"
     found: "F:/School/MSYS2/mingw64/bin/gcc-ar.exe"
     search_context:
@@ -792,6 +940,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -826,6 +975,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib-15.2.com"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib-15.2.exe"
@@ -860,6 +1010,9 @@ events:
       - "F:/CMake/bin/gcc-ranlib-15.2.com"
       - "F:/CMake/bin/gcc-ranlib-15.2.exe"
       - "F:/CMake/bin/gcc-ranlib-15.2"
+      - "C:/Program Files/Git/bin/gcc-ranlib-15.2.com"
+      - "C:/Program Files/Git/bin/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/Git/bin/gcc-ranlib-15.2"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib-15.com"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib-15.exe"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib-15"
@@ -893,6 +1046,9 @@ events:
       - "F:/CMake/bin/gcc-ranlib-15.com"
       - "F:/CMake/bin/gcc-ranlib-15.exe"
       - "F:/CMake/bin/gcc-ranlib-15"
+      - "C:/Program Files/Git/bin/gcc-ranlib-15.com"
+      - "C:/Program Files/Git/bin/gcc-ranlib-15.exe"
+      - "C:/Program Files/Git/bin/gcc-ranlib-15"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib15.com"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib15.exe"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib15"
@@ -926,6 +1082,9 @@ events:
       - "F:/CMake/bin/gcc-ranlib15.com"
       - "F:/CMake/bin/gcc-ranlib15.exe"
       - "F:/CMake/bin/gcc-ranlib15"
+      - "C:/Program Files/Git/bin/gcc-ranlib15.com"
+      - "C:/Program Files/Git/bin/gcc-ranlib15.exe"
+      - "C:/Program Files/Git/bin/gcc-ranlib15"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib.com"
     found: "F:/School/MSYS2/mingw64/bin/gcc-ranlib.exe"
     search_context:
@@ -943,6 +1102,52 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "g++"
+      - "cl"
+      - "bcc"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "F:/School/MSYS2/mingw64/bin/"
+    searched_directories:
+      - "F:/School/MSYS2/mingw64/bin/c++.com"
+    found: "F:/School/MSYS2/mingw64/bin/c++.exe"
+    search_context:
+      ENV{PATH}:
+        - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "F:\\School\\MSYS2\\usr\\local\\bin"
+        - "F:\\School\\MSYS2\\usr\\bin"
+        - "F:\\School\\MSYS2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "F:\\School\\MSYS2\\usr\\bin\\site_perl"
+        - "F:\\School\\MSYS2\\usr\\bin\\vendor_perl"
+        - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
+        - "F:\\CMake\\bin"
+        - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -983,6 +1188,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -992,7 +1198,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: F:/School/MSYS2/mingw64/bin/g++.exe 
+      Compiler: F:/School/MSYS2/mingw64/bin/c++.exe 
       Build flags: 
       Id flags:  
       
@@ -1039,6 +1245,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/gcc-ar-15.2.com"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar-15.2.exe"
@@ -1073,6 +1280,9 @@ events:
       - "F:/CMake/bin/gcc-ar-15.2.com"
       - "F:/CMake/bin/gcc-ar-15.2.exe"
       - "F:/CMake/bin/gcc-ar-15.2"
+      - "C:/Program Files/Git/bin/gcc-ar-15.2.com"
+      - "C:/Program Files/Git/bin/gcc-ar-15.2.exe"
+      - "C:/Program Files/Git/bin/gcc-ar-15.2"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar-15.com"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar-15.exe"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar-15"
@@ -1106,6 +1316,9 @@ events:
       - "F:/CMake/bin/gcc-ar-15.com"
       - "F:/CMake/bin/gcc-ar-15.exe"
       - "F:/CMake/bin/gcc-ar-15"
+      - "C:/Program Files/Git/bin/gcc-ar-15.com"
+      - "C:/Program Files/Git/bin/gcc-ar-15.exe"
+      - "C:/Program Files/Git/bin/gcc-ar-15"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar15.com"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar15.exe"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar15"
@@ -1139,6 +1352,9 @@ events:
       - "F:/CMake/bin/gcc-ar15.com"
       - "F:/CMake/bin/gcc-ar15.exe"
       - "F:/CMake/bin/gcc-ar15"
+      - "C:/Program Files/Git/bin/gcc-ar15.com"
+      - "C:/Program Files/Git/bin/gcc-ar15.exe"
+      - "C:/Program Files/Git/bin/gcc-ar15"
       - "F:/School/MSYS2/mingw64/bin/gcc-ar.com"
     found: "F:/School/MSYS2/mingw64/bin/gcc-ar.exe"
     search_context:
@@ -1156,6 +1372,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1190,6 +1407,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib-15.2.com"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib-15.2.exe"
@@ -1224,6 +1442,9 @@ events:
       - "F:/CMake/bin/gcc-ranlib-15.2.com"
       - "F:/CMake/bin/gcc-ranlib-15.2.exe"
       - "F:/CMake/bin/gcc-ranlib-15.2"
+      - "C:/Program Files/Git/bin/gcc-ranlib-15.2.com"
+      - "C:/Program Files/Git/bin/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/Git/bin/gcc-ranlib-15.2"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib-15.com"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib-15.exe"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib-15"
@@ -1257,6 +1478,9 @@ events:
       - "F:/CMake/bin/gcc-ranlib-15.com"
       - "F:/CMake/bin/gcc-ranlib-15.exe"
       - "F:/CMake/bin/gcc-ranlib-15"
+      - "C:/Program Files/Git/bin/gcc-ranlib-15.com"
+      - "C:/Program Files/Git/bin/gcc-ranlib-15.exe"
+      - "C:/Program Files/Git/bin/gcc-ranlib-15"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib15.com"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib15.exe"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib15"
@@ -1290,6 +1514,9 @@ events:
       - "F:/CMake/bin/gcc-ranlib15.com"
       - "F:/CMake/bin/gcc-ranlib15.exe"
       - "F:/CMake/bin/gcc-ranlib15"
+      - "C:/Program Files/Git/bin/gcc-ranlib15.com"
+      - "C:/Program Files/Git/bin/gcc-ranlib15.exe"
+      - "C:/Program Files/Git/bin/gcc-ranlib15"
       - "F:/School/MSYS2/mingw64/bin/gcc-ranlib.com"
     found: "F:/School/MSYS2/mingw64/bin/gcc-ranlib.exe"
     search_context:
@@ -1307,6 +1534,7 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1341,6 +1569,7 @@ events:
       - "F:/School/MSYS2/usr/bin/vendor_perl/"
       - "F:/School/MSYS2/usr/bin/core_perl/"
       - "F:/CMake/bin/"
+      - "C:/Program Files/Git/bin/"
       - "F:/School/MSYS2/mingw64/bin/"
       - "F:/School/MSYS2/mingw64/sbin/"
       - "F:/School/MSYS2/mingw64/"
@@ -1350,9 +1579,9 @@ events:
       - "C:/Program Files (x86)/bin/"
       - "C:/Program Files (x86)/sbin/"
       - "C:/Program Files (x86)/"
-      - "C:/Program Files (x86)/multiplayer_server/bin/"
-      - "C:/Program Files (x86)/multiplayer_server/sbin/"
-      - "C:/Program Files (x86)/multiplayer_server/"
+      - "C:/Program Files (x86)/MultiplayerServer/bin/"
+      - "C:/Program Files (x86)/MultiplayerServer/sbin/"
+      - "C:/Program Files (x86)/MultiplayerServer/"
     searched_directories:
       - "F:/School/MSYS2/mingw64/bin/windres.com"
     found: "F:/School/MSYS2/mingw64/bin/windres.exe"
@@ -1371,13 +1600,14 @@ events:
         - "F:\\School\\MSYS2\\usr\\bin\\core_perl"
         - "F:\\CMake\\bin"
         - "F:\\School\\MSYS2\\mingw64\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/multiplayer_server"
+        - "C:\\Program Files\\Git\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/MultiplayerServer"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "F:/School/MSYS2/mingw64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "F:/School/MSYS2/mingw64"
-        - "C:/Program Files (x86)/multiplayer_server"
+        - "C:/Program Files (x86)/MultiplayerServer"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1387,8 +1617,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-3sdo07"
-      binary: "F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-3sdo07"
+      source: "F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-k8mh07"
+      binary: "F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-k8mh07"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1397,22 +1627,19 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-3sdo07'
+        Change Dir: 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-k8mh07'
         
-        Run Build Command(s): F:/School/MSYS2/mingw64/bin/cmake.exe -E env VERBOSE=1 F:/School/MSYS2/mingw64/bin/mingw32-make.exe -f Makefile cmTC_4c2b3/fast
-        F:/School/MSYS2/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4c2b3.dir\\build.make CMakeFiles/cmTC_4c2b3.dir/build
-        mingw32-make[1]: Entering directory 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-3sdo07'
-        Building C object CMakeFiles/cmTC_4c2b3.dir/CMakeCCompilerABI.c.obj
-        F:\\School\\MSYS2\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_4c2b3.dir\\CMakeCCompilerABI.c.obj -c F:\\School\\MSYS2\\mingw64\\share\\cmake\\Modules\\CMakeCCompilerABI.c
+        Run Build Command(s): F:/School/MSYS2/mingw64/bin/ninja.exe -v cmTC_bd5f2
+        [1/2] F:\\School\\MSYS2\\mingw64\\bin\\cc.exe   -v -o CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj -c F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
-        COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\gcc.exe
+        COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\cc.exe
         Target: x86_64-w64-mingw32
         Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_4c2b3.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_4c2b3.dir\\'
-         F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT F:\\School\\MSYS2\\mingw64\\share\\cmake\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_4c2b3.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o F:\\School\\MSYS2\\tmp\\ccU7Bl5g.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_bd5f2.dir/'
+         F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bd5f2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o F:\\School\\MSYS2\\tmp\\cczxIFo4.s
         GNU C23 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1431,16 +1658,15 @@ events:
          F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: feaaa8b8d0ead308dc62d839201f7330
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_4c2b3.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_4c2b3.dir\\'
-         F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_4c2b3.dir\\CMakeCCompilerABI.c.obj F:\\School\\MSYS2\\tmp\\ccU7Bl5g.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_bd5f2.dir/'
+         F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj F:\\School\\MSYS2\\tmp\\cczxIFo4.s
         GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45
         COMPILER_PATH=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;F:/School/MSYS2/mingw64/bin/../lib/gcc/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;F:/School/MSYS2/mingw64/bin/../lib/gcc/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_4c2b3.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_4c2b3.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_4c2b3.exe
-        F:\\School\\MSYS2\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_4c2b3.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\School\\MSYS2\\mingw64\\bin\\cc.exe  -v -Wl,-v CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj -o cmTC_bd5f2.exe -Wl,--out-implib,libcmTC_bd5f2.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
-        COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\gcc.exe
+        COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\cc.exe
         COLLECT_LTO_WRAPPER=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
         Target: x86_64-w64-mingw32
         Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
@@ -1449,16 +1675,12 @@ events:
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
         COMPILER_PATH=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;F:/School/MSYS2/mingw64/bin/../lib/gcc/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;F:/School/MSYS2/mingw64/bin/../lib/gcc/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4c2b3.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_4c2b3.'
-         F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\cc8usK4t.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_4c2b3.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_4c2b3.dir/objects.a --no-whole-archive --out-implib libcmTC_4c2b3.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bd5f2.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_bd5f2.'
+         F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccDxngf7.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_bd5f2.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_bd5f2.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\cc8usK4t.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_4c2b3.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_4c2b3.dir/objects.a --no-whole-archive --out-implib libcmTC_4c2b3.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccDxngf7.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_bd5f2.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_bd5f2.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4c2b3.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_4c2b3.'
-        F:\\School\\MSYS2\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_4c2b3.dir/objects.a
-        F:\\School\\MSYS2\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_4c2b3.dir/objects.a @CMakeFiles\\cmTC_4c2b3.dir\\objects1.rsp
-        F:\\School\\MSYS2\\mingw64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_4c2b3.dir/objects.a -Wl,--no-whole-archive -o cmTC_4c2b3.exe -Wl,--out-implib,libcmTC_4c2b3.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-3sdo07'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bd5f2.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_bd5f2.'
         
       exitCode: 0
   -
@@ -1491,22 +1713,19 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-3sdo07']
+        ignore line: [Change Dir: 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-k8mh07']
         ignore line: []
-        ignore line: [Run Build Command(s): F:/School/MSYS2/mingw64/bin/cmake.exe -E env VERBOSE=1 F:/School/MSYS2/mingw64/bin/mingw32-make.exe -f Makefile cmTC_4c2b3/fast]
-        ignore line: [F:/School/MSYS2/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4c2b3.dir\\build.make CMakeFiles/cmTC_4c2b3.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-3sdo07']
-        ignore line: [Building C object CMakeFiles/cmTC_4c2b3.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [F:\\School\\MSYS2\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_4c2b3.dir\\CMakeCCompilerABI.c.obj -c F:\\School\\MSYS2\\mingw64\\share\\cmake\\Modules\\CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): F:/School/MSYS2/mingw64/bin/ninja.exe -v cmTC_bd5f2]
+        ignore line: [[1/2] F:\\School\\MSYS2\\mingw64\\bin\\cc.exe   -v -o CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj -c F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\gcc.exe]
+        ignore line: [COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\cc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_4c2b3.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_4c2b3.dir\\']
-        ignore line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT F:\\School\\MSYS2\\mingw64\\share\\cmake\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_4c2b3.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o F:\\School\\MSYS2\\tmp\\ccU7Bl5g.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_bd5f2.dir/']
+        ignore line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bd5f2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o F:\\School\\MSYS2\\tmp\\cczxIFo4.s]
         ignore line: [GNU C23 (Rev8  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1525,8 +1744,8 @@ events:
         ignore line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: feaaa8b8d0ead308dc62d839201f7330]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_4c2b3.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_4c2b3.dir\\']
-        ignore line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_4c2b3.dir\\CMakeCCompilerABI.c.obj F:\\School\\MSYS2\\tmp\\ccU7Bl5g.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_bd5f2.dir/']
+        ignore line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj F:\\School\\MSYS2\\tmp\\cczxIFo4.s]
         ignore line: [GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45]
         ignore line: [COMPILER_PATH=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/]
@@ -1537,11 +1756,10 @@ events:
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_4c2b3.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_4c2b3.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_4c2b3.exe]
-        ignore line: [F:\\School\\MSYS2\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_4c2b3.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\School\\MSYS2\\mingw64\\bin\\cc.exe  -v -Wl -v CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj -o cmTC_bd5f2.exe -Wl --out-implib libcmTC_bd5f2.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\gcc.exe]
+        ignore line: [COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\cc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
@@ -1557,13 +1775,13 @@ events:
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4c2b3.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_4c2b3.']
-        link line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\cc8usK4t.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_4c2b3.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_4c2b3.dir/objects.a --no-whole-archive --out-implib libcmTC_4c2b3.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bd5f2.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_bd5f2.']
+        link line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccDxngf7.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_bd5f2.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_bd5f2.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\cc8usK4t.res] ==> ignore
+          arg [-plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccDxngf7.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -1585,7 +1803,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_4c2b3.exe] ==> ignore
+          arg [cmTC_bd5f2.exe] ==> ignore
           arg [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
           arg [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -1595,11 +1813,9 @@ events:
           arg [-LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
-          arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_4c2b3.dir/objects.a] ==> ignore
-          arg [--no-whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_4c2b3.dll.a] ==> ignore
+          arg [libcmTC_bd5f2.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -1624,7 +1840,7 @@ events:
           arg [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
           arg [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\cc8usK4t.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_4c2b3.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_4c2b3.dir/objects.a --no-whole-archive --out-implib libcmTC_4c2b3.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccDxngf7.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_bd5f2.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_bd5f2.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_bd5f2.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'C': F:/School/MSYS2/mingw64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [gcc_eh]
         remove lib [msvcrt]
@@ -1665,8 +1881,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-rh74vu"
-      binary: "F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-rh74vu"
+      source: "F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-zoyby2"
+      binary: "F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-zoyby2"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1676,22 +1892,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-rh74vu'
+        Change Dir: 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-zoyby2'
         
-        Run Build Command(s): F:/School/MSYS2/mingw64/bin/cmake.exe -E env VERBOSE=1 F:/School/MSYS2/mingw64/bin/mingw32-make.exe -f Makefile cmTC_85fa4/fast
-        F:/School/MSYS2/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_85fa4.dir\\build.make CMakeFiles/cmTC_85fa4.dir/build
-        mingw32-make[1]: Entering directory 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-rh74vu'
-        Building CXX object CMakeFiles/cmTC_85fa4.dir/CMakeCXXCompilerABI.cpp.obj
-        F:\\School\\MSYS2\\mingw64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_85fa4.dir\\CMakeCXXCompilerABI.cpp.obj -c F:\\School\\MSYS2\\mingw64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp
+        Run Build Command(s): F:/School/MSYS2/mingw64/bin/ninja.exe -v cmTC_98023
+        [1/2] F:\\School\\MSYS2\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj -c F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
-        COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\g++.exe
+        COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
         Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_85fa4.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_85fa4.dir\\'
-         F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT F:\\School\\MSYS2\\mingw64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_85fa4.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o F:\\School\\MSYS2\\tmp\\ccqE4gpX.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_98023.dir/'
+         F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_98023.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o F:\\School\\MSYS2\\tmp\\cc6nr6Ze.s
         GNU C++17 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1716,16 +1929,15 @@ events:
          F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_85fa4.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_85fa4.dir\\'
-         F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_85fa4.dir\\CMakeCXXCompilerABI.cpp.obj F:\\School\\MSYS2\\tmp\\ccqE4gpX.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_98023.dir/'
+         F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj F:\\School\\MSYS2\\tmp\\cc6nr6Ze.s
         GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45
         COMPILER_PATH=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;F:/School/MSYS2/mingw64/bin/../lib/gcc/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;F:/School/MSYS2/mingw64/bin/../lib/gcc/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_85fa4.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_85fa4.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_85fa4.exe
-        F:\\School\\MSYS2\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_85fa4.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\School\\MSYS2\\mingw64\\bin\\c++.exe  -v -Wl,-v CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_98023.exe -Wl,--out-implib,libcmTC_98023.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
-        COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\g++.exe
+        COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
         Target: x86_64-w64-mingw32
         Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
@@ -1734,16 +1946,12 @@ events:
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
         COMPILER_PATH=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;F:/School/MSYS2/mingw64/bin/../lib/gcc/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;F:/School/MSYS2/mingw64/bin/../lib/gcc/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_85fa4.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_85fa4.'
-         F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccewfXAa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_85fa4.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_85fa4.dir/objects.a --no-whole-archive --out-implib libcmTC_85fa4.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_98023.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_98023.'
+         F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccXg0kxk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_98023.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_98023.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccewfXAa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_85fa4.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_85fa4.dir/objects.a --no-whole-archive --out-implib libcmTC_85fa4.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccXg0kxk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_98023.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_98023.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_85fa4.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_85fa4.'
-        F:\\School\\MSYS2\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_85fa4.dir/objects.a
-        F:\\School\\MSYS2\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_85fa4.dir/objects.a @CMakeFiles\\cmTC_85fa4.dir\\objects1.rsp
-        F:\\School\\MSYS2\\mingw64\\bin\\g++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_85fa4.dir/objects.a -Wl,--no-whole-archive -o cmTC_85fa4.exe -Wl,--out-implib,libcmTC_85fa4.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-rh74vu'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_98023.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_98023.'
         
       exitCode: 0
   -
@@ -1782,22 +1990,19 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-rh74vu']
+        ignore line: [Change Dir: 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-zoyby2']
         ignore line: []
-        ignore line: [Run Build Command(s): F:/School/MSYS2/mingw64/bin/cmake.exe -E env VERBOSE=1 F:/School/MSYS2/mingw64/bin/mingw32-make.exe -f Makefile cmTC_85fa4/fast]
-        ignore line: [F:/School/MSYS2/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_85fa4.dir\\build.make CMakeFiles/cmTC_85fa4.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'F:/School/VSProject/multiplayer-server/build/CMakeFiles/CMakeScratch/TryCompile-rh74vu']
-        ignore line: [Building CXX object CMakeFiles/cmTC_85fa4.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [F:\\School\\MSYS2\\mingw64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_85fa4.dir\\CMakeCXXCompilerABI.cpp.obj -c F:\\School\\MSYS2\\mingw64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): F:/School/MSYS2/mingw64/bin/ninja.exe -v cmTC_98023]
+        ignore line: [[1/2] F:\\School\\MSYS2\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj -c F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\g++.exe]
+        ignore line: [COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_85fa4.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_85fa4.dir\\']
-        ignore line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT F:\\School\\MSYS2\\mingw64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_85fa4.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o F:\\School\\MSYS2\\tmp\\ccqE4gpX.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_98023.dir/']
+        ignore line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT F:/School/MSYS2/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_98023.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o F:\\School\\MSYS2\\tmp\\cc6nr6Ze.s]
         ignore line: [GNU C++17 (Rev8  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1822,8 +2027,8 @@ events:
         ignore line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_85fa4.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_85fa4.dir\\']
-        ignore line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_85fa4.dir\\CMakeCXXCompilerABI.cpp.obj F:\\School\\MSYS2\\tmp\\ccqE4gpX.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_98023.dir/']
+        ignore line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj F:\\School\\MSYS2\\tmp\\cc6nr6Ze.s]
         ignore line: [GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45]
         ignore line: [COMPILER_PATH=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/]
@@ -1834,11 +2039,10 @@ events:
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_85fa4.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_85fa4.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_85fa4.exe]
-        ignore line: [F:\\School\\MSYS2\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_85fa4.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\School\\MSYS2\\mingw64\\bin\\c++.exe  -v -Wl -v CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_98023.exe -Wl --out-implib libcmTC_98023.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\g++.exe]
+        ignore line: [COLLECT_GCC=F:\\School\\MSYS2\\mingw64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
@@ -1854,13 +2058,13 @@ events:
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_85fa4.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_85fa4.']
-        link line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccewfXAa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_85fa4.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_85fa4.dir/objects.a --no-whole-archive --out-implib libcmTC_85fa4.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_98023.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_98023.']
+        link line: [ F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccXg0kxk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_98023.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_98023.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccewfXAa.res] ==> ignore
+          arg [-plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccXg0kxk.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -1882,7 +2086,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_85fa4.exe] ==> ignore
+          arg [cmTC_98023.exe] ==> ignore
           arg [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
           arg [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -1892,11 +2096,9 @@ events:
           arg [-LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
-          arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_85fa4.dir/objects.a] ==> ignore
-          arg [--no-whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_85fa4.dll.a] ==> ignore
+          arg [libcmTC_98023.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -1922,7 +2124,7 @@ events:
           arg [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
           arg [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccewfXAa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_85fa4.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_85fa4.dir/objects.a --no-whole-archive --out-implib libcmTC_85fa4.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=F:\\School\\MSYS2\\tmp\\ccXg0kxk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_98023.exe F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LF:/School/MSYS2/mingw64/bin/../lib/gcc -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LF:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_98023.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_98023.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o F:/School/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'CXX': F:/School/MSYS2/mingw64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]

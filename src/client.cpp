@@ -1,80 +1,79 @@
-#include "client.hpp"
-// Includes the client class definition from client.hpp so that the
-// compiler knows which functions are being implemented below.
+//Fourth file to make
+#include "client.hpp"   // Includes the Client class definition
+#include <thread>       // Enables background message listening using threads
 
 // ============================================================
-//                CONSTRUCTOR AND DESTRUCTOR
+//                 CLIENT IMPLEMENTATION
 // ============================================================
 
+// Constructor — stores server IP and port, sets socket as invalid
 Client::Client(const std::string& serverIP, int port)
     : serverIP(serverIP), port(port), clientSocket(INVALID_SOCKET) {}
-// Constructor initialization list:
-//   • Copies the given server IP and port into the class members.
-//   • Sets clientSocket to INVALID_SOCKET to indicate that no
-//     connection has been established yet.
 
+// Destructor — closes the socket and cleans up Winsock
 Client::~Client() {
-    closesocket(clientSocket);   // Closes the socket connection if open.
-    WSACleanup();                // Frees all resources allocated by Winsock.
+    closesocket(clientSocket);  // Gracefully close the socket connection
+    WSACleanup();               // Shut down the Winsock library
 }
-// The destructor ensures that network resources are properly released
-// when the client object goes out of scope or the program exits.
 
-// ============================================================
-//                WINSOCK INITIALIZATION
-// ============================================================
-
+// Initializes the Winsock library (required before any socket operations)
 bool Client::initWinsock() {
-    WSADATA wsaData;                         // Structure to hold information about the Winsock implementation.
-    return WSAStartup(MAKEWORD(2, 2), &wsaData) == 0;
+    WSADATA wsaData;
+    return WSAStartup(MAKEWORD(2, 2), &wsaData) == 0;  // Returns true if startup succeeded
 }
-// Initializes the Winsock library with version 2.2.
-// Returns true if initialization succeeds, or false if it fails.
 
-// ============================================================
-//                CONNECT TO SERVER
-// ============================================================
-
+// Attempts to connect to the server using stored IP and port
 bool Client::connectToServer() {
-    // Step 1: Initialize Winsock.
-    if (!initWinsock()) {
-        std::cerr << "Failed to initialize Winsock.\n";
+    if (!initWinsock()) {  // Ensure Winsock is initialized first
+        std::cerr << "[Client] Failed to initialize Winsock.\n";
         return false;
     }
 
-    // Step 2: Create a TCP socket.
-    clientSocket = socket(AF_INET, SOCK_STREAM, 0);
+    clientSocket = socket(AF_INET, SOCK_STREAM, 0);  // Create a TCP socket
     if (clientSocket == INVALID_SOCKET) {
-        std::cerr << "Socket creation failed.\n";
+        std::cerr << "[Client] Socket creation failed.\n";
         return false;
     }
 
-    // Step 3: Configure the server’s address structure.
-    sockaddr_in serverAddr{};                   // Zero-initialize the structure.
-    serverAddr.sin_family = AF_INET;            // Set address family to IPv4.
-    inet_pton(AF_INET, serverIP.c_str(), &serverAddr.sin_addr);
-    // Converts the string IP (e.g., "127.0.0.1") into a numeric binary form.
-    serverAddr.sin_port = htons(port);          // Converts port to network byte order.
+    sockaddr_in serverAddr{};                        // Define server address structure
+    serverAddr.sin_family = AF_INET;                 // IPv4
+    inet_pton(AF_INET, serverIP.c_str(), &serverAddr.sin_addr); // Convert IP string → binary
+    serverAddr.sin_port = htons(port);               // Convert port to network byte order
 
-    // Step 4: Attempt to connect to the server.
+    // Attempt to connect to the server
     if (connect(clientSocket, (sockaddr*)&serverAddr, sizeof(serverAddr)) == SOCKET_ERROR) {
-        std::cerr << "Connection failed.\n";
+        std::cerr << "[Client] Connection failed.\n";
         return false;
     }
 
-    // Step 5: If connection succeeds, inform the user.
-    std::cout << "Connected to server!\n";
+    std::cout << "[Client] Connected to server!\n";
+
+    // Prompt user for a username and send it to the server
+    std::string username;
+    std::cout << "Enter your username: ";
+    std::getline(std::cin, username);
+    send(clientSocket, username.c_str(), username.size(), 0);
+
     return true;
 }
 
-// ============================================================
-//                SEND MESSAGE TO SERVER
-// ============================================================
-
+// Sends a text message to the server
 void Client::sendMessage(const std::string& message) {
-    // Sends the provided message string to the connected server.
-    // message.c_str() gives a C-style string pointer.
-    // message.size() is the number of bytes to send.
-    // The final argument (flags) is set to 0.
     send(clientSocket, message.c_str(), message.size(), 0);
+}
+
+// Continuously listens for messages from the server in a background thread
+void Client::listenForMessages() {
+    char buffer[512];  // Message buffer
+    while (true) {
+        int bytesReceived = recv(clientSocket, buffer, sizeof(buffer) - 1, 0);
+        if (bytesReceived <= 0) {  // 0 = disconnected, <0 = error
+            std::cout << "[Client] Disconnected from server.\n";
+            break;
+        }
+
+        buffer[bytesReceived] = '\0';  // Null-terminate received message
+        std::cout << "\n[Server Broadcast] " << buffer << "\n> ";
+        std::cout.flush();             // Keep prompt clean in console
+    }
 }
